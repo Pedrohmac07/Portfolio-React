@@ -24,3 +24,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes slide-y {
+  0% { transform: translateX(-50%) translateY(0%); }
+  50% { transform: translateX(-50%) translateY(100%); }
+  100% { transform: translateX(-50%) translateY(0%); }
+}
+
+.animate-slide-y {
+  animation: slide-y 2s infinite ease-in-out;
+}
+
+@keyframes opacity-scroller {
+  0% {opacity: 0.1}
+  50% {opacity: 1}
+  100% {opacity: 0.1}
+}
+
+.animate-opacity {
+  animation: opacity-scroller 2s infinite ease-in-out
+}

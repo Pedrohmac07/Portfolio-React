@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "category": "Front-End",
+    "projects": [
+      {
+        "id": 1,
+        "name": "VaporWave",
+        "description": "Site with CSS animations and JS.",
+        "image": "/images/frontend1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Corinthians",
+        "description": "Just a simple site.",
+        "image": "/images/frontend2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Back-End",
+    "projects": [
+      {
+        "id": 3,
+        "name": "QR-Code Generator",
+        "description": "QR-Code and password Generator made with NodeJS.",
+        "image": "/images/backend1.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Formula 1 API",
+        "description": "Formula 1 API, with teams and drivers. Made with NodeJS.",
+        "image": "/images/backend2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "FullStack",
+    "projects": [
+      {
+        "id": 5,
+        "name": "Pokedex API",
+        "description": "Plataforma usando NodeJS para retornar informações da API da pokedex.",
+        "image": "/images/fullstack1.jpg"
+      }
+    ]
+  }
+]
