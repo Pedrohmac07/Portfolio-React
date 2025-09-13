@@ -34,7 +34,7 @@ export default function Home() {
       
 
       {/* ScrollIndicator */}
-      <nav className="fixed bottom-0.5 left-1/2 transform z-20">
+      <nav className="fixed bottom-1/2 left-1/25 transform z-20">
       <ScrollIndicator/>
       </nav>
     </main>

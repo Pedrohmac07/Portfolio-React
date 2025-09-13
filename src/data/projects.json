@@ -6,14 +6,16 @@
       {
         "id": 1,
         "name": "VaporWave",
-        "description": "Site with CSS animations and JS.",
-        "image": "/images/frontend1.jpg"
+        "description": "Site feito com animações CSS | JS",
+        "image": "/Vaporwave.png",
+        "link": "https://pedrohmac07.github.io/HTML_CSS/Projetos/VaporWave/"
       },
       {
         "id": 2,
-        "name": "Corinthians",
-        "description": "Just a simple site.",
-        "image": "/images/frontend2.jpg"
+        "name": "MineSweeper",
+        "description": "UM jogo web feito com JS.",
+        "image": "/Minesweeper.png",
+        "link": "https://pedrohmac07.github.io/MineSweeper/"
       }
     ]
   },
@@ -24,26 +26,16 @@
       {
         "id": 3,
         "name": "QR-Code Generator",
-        "description": "QR-Code and password Generator made with NodeJS.",
-        "image": "/images/backend1.jpg"
+        "description": "Gerador de QR-code e senhas. NodeJS.",
+        "image": "/qr-code.png",
+        "link": "https://github.com/Pedrohmac07/QrCode-Generator"
       },
       {
         "id": 4,
         "name": "Formula 1 API",
-        "description": "Formula 1 API, with teams and drivers. Made with NodeJS.",
-        "image": "/images/backend2.jpg"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "category": "FullStack",
-    "projects": [
-      {
-        "id": 5,
-        "name": "Pokedex API",
-        "description": "Plataforma usando NodeJS para retornar informações da API da pokedex.",
-        "image": "/images/fullstack1.jpg"
+        "description": "Formula 1 API. NODEJS",
+        "image": "/formula-1.gif",
+        "link": "https://github.com/Pedrohmac07/Formula1-nodeJS-API"
       }
     ]
   }

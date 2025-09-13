@@ -8,13 +8,12 @@ export default function ProjectsTabs() {
 
   return (
     <div className="w-full max-w-6xl mx-auto mt-16 px-4">
-      {/* Abas de categoria */}
       <div className="flex space-x-4 mb-8 justify-center">
         {projectCategories.map((category, index) => (
           <button
             key={category.id}
             onClick={() => setActiveTab(index)}
-            className={`px-4 py-2 rounded-md font-medium transition-colors ${
+            className={`px-4 py-2 rounded-md font-medium transition-colors hover:cursor-pointer ${
               activeTab === index
                 ? "bg-blue-600 text-white"
                 : "bg-white text-gray-800"
@@ -30,7 +29,7 @@ export default function ProjectsTabs() {
         {activeCategory.projects.map((project: any) => (
           <div
             key={project.id}
-            className="border p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow bg-gray-950"
+            className="border p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow bg-gray-950 hover:cursor-pointer"
           >
             <img
               src={project.image}
@@ -41,6 +40,9 @@ export default function ProjectsTabs() {
             <p className="text-gray-700">{project.description}</p>
           </div>
         ))}
+        <div className="w-screen">
+          <h3 className=" text-center text-2xl font-bold">Você pode encontrar mais projetos no meu <a href="https://github.com/Pedrohmac07" className=" underline hover:text-blue-700">Github</a></h3>
+        </div>
       </div>
     </div>
   );
