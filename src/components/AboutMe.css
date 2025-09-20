@@ -1,0 +1,9 @@
+strong {
+  color: rgb(136, 136, 255);
+}
+strong:hover {
+  background: linear-gradient(135deg, rgb(136, 136, 255), rgb(100, 100, 255));
+  color: white;
+  transition: 0.5s;
+}
+

@@ -6,14 +6,14 @@
       {
         "id": 1,
         "name": "VaporWave",
-        "description": "Site feito com animações CSS | JS",
+        "description": "Animated project made with CSS | JS",
         "image": "/Vaporwave.png",
         "link": "https://pedrohmac07.github.io/HTML_CSS/Projetos/VaporWave/"
       },
       {
         "id": 2,
         "name": "MineSweeper",
-        "description": "UM jogo web feito com JS.",
+        "description": "Web game made with JS.",
         "image": "/Minesweeper.png",
         "link": "https://pedrohmac07.github.io/MineSweeper/"
       }
@@ -26,7 +26,7 @@
       {
         "id": 3,
         "name": "QR-Code Generator",
-        "description": "Gerador de QR-code e senhas. NodeJS.",
+        "description": "QR code and password generator in terminal. NodeJS.",
         "image": "/qr-code.png",
         "link": "https://github.com/Pedrohmac07/QrCode-Generator"
       },

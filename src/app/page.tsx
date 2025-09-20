@@ -1,11 +1,11 @@
 import HomeComponent from "@/components/HomeInfo";
 import "./page.css";
 import Particles from "@/particles/particlesbackground";
-import Carousel from "@/components/carousel-motion";
-import MyProfilePicture from "@/pages/Images";
 import ScrollIndicator from "@/particles/ScrollIndicator";
 import MotionScroll from "@/components/Framer-Motion";
 import TabsProjects from "@/components/TabsProjects";
+import MyProfilePicture from "@/pages/Images";
+import AboutMeComp from "@/components/AboutMeInfo";
 
 export default function Home() {
   return (
@@ -34,16 +34,22 @@ export default function Home() {
     
       {/* Primeira seção */}
       <MotionScroll>
-        <div className="grid grid-cols-2 place-items-center gap-0 h-screen z-10 relative">
+        <div className="grid grid-cols-2 place-items-center h-screen z-10 relative">
           <HomeComponent />
           <MyProfilePicture />
         </div>
       </MotionScroll>
 
+      <div className="flex h-screen z-10 relative margin-auto">
+        <MotionScroll>
+          <AboutMeComp />
+        </MotionScroll>
+      </div>
+
       {/* Segunda seção */}
         <div className="flex justify-center items-center h-screen z-10 relative">
           <MotionScroll>
-            <h1 className=" text-center">Meus Projetos</h1>
+            <h1 className=" text-center">My Projects</h1>
             <TabsProjects />
           </MotionScroll>
         </div>
@@ -51,7 +57,7 @@ export default function Home() {
       
 
       {/* ScrollIndicator */}
-      <nav className="fixed bottom-1/2 left-1/25 transform z-20">
+      <nav className="absolute bottom-4/5 left-1/25 transform z-20">
       <ScrollIndicator/>
       </nav>
     </main>

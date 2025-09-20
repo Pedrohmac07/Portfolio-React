@@ -11,20 +11,19 @@ library.add(fas, far, fab)
 
 import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
-import { Opacity } from '@tsparticles/engine';
+import './HomeInfo.css';
 
 const HomeComponent = () => (
   <div className="w-75">
     <h1 className="text-4xl font-bold text-white">
-      <ReactTyped strings={["Olá, eu sou Pedro Machado!"]} typeSpeed={40} />
+      <ReactTyped strings={["Hello, I'm Pedro Machado!"]} typeSpeed={40} />
     </h1>
     <p className="text-shadow-white">
       <ReactTyped
         strings={[
-          "Gosto de programar",
-          "Gosto de design",
-          "Amo front-end",
-          "Amo back-end!"
+          "I love programming",
+          "I love design",
+          "Studying a lot!",
         ]}
         typeSpeed={40}
         backSpeed={50}
@@ -37,15 +36,14 @@ const HomeComponent = () => (
     <motion.div initial={{y: 200, Opacity: 0}}
     animate={{y:0, opacity: 1}}
     transition={{duration: 1}}
-    className="flex gap-1"
-    >
-      <a className='fabicon'>
+    className="grid grid-cols-3 gap-4 w-1/2 mt-4 text-white text-3xl">      
+    <a href='https://github.com/Pedrohmac07' target='_blank' className='fabicon'>
         <FontAwesomeIcon icon={['fab', 'github']}/>
       </a>
-      <a className='fabicon'>
+      <a href='https://www.linkedin.com/in/pedro-henrique-machado-99171334a/' target='_blank' className='fabicon'>
         <FontAwesomeIcon icon={['fab', 'linkedin']}/>
       </a>
-      <a href='' className='fabicon'>
+      <a href='https://www.instagram.com/pedrohmachado0?igsh=NjFzZDIyZmo5YXJj' target='_blank' className='fabicon'>
         <FontAwesomeIcon icon={['fab', 'instagram']}/>
       </a>
     </motion.div>

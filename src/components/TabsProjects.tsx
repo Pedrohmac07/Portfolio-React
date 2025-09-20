@@ -9,12 +9,12 @@ export default function ProjectsTabs() {
 
   return (
     <div className="w-full max-w-6xl mx-auto mt-16 px-4">
-      <div className="flex space-x-4 mb-8 justify-center">
+      <div className="grid grid-cols-2 gap-5 mb-8 justify-center">
         {projectCategories.map((category, index) => (
           <button
             key={category.id}
             onClick={() => setActiveTab(index)}
-            className={`px-4 py-2 rounded-md font-medium transition-colors hover:cursor-pointer ${
+            className={`px-4 py-2 font-medium transition-colors hover:cursor-pointer ${
               activeTab === index
                 ? "bg-blue-600 text-white"
                 : "bg-white text-gray-800"
@@ -28,11 +28,13 @@ export default function ProjectsTabs() {
       {/* Projetos da categoria ativa */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         {activeCategory.projects.map((project: any) => (
-          <motion.div
+          <motion.a
             className="border p-4 rounded-lg shadow-md hover:shadow-lg bg-gray-950 hover:cursor-pointer hover:scale-105 duration-200"
             key={project.id}
             whileHover={{ scale: 1.00 }}
             whileTap={{ scale: 0.95 }}
+            href={project.link}
+            target="_blank"
           >
             <img
               src={project.image}
@@ -41,10 +43,10 @@ export default function ProjectsTabs() {
             />
             <h3 className="text-xl font-bold mb-2">{project.name}</h3>
             <p className="text-gray-700">{project.description}</p>
-          </motion.div>
+          </motion.a>
         ))}
         <div className="w-screen">
-          <h3 className=" text-center text-2xl font-bold">Você pode encontrar mais projetos no meu <a href="https://github.com/Pedrohmac07" className=" underline hover:text-blue-700">Github</a></h3>
+          <h3 className=" text-center text-2xl font-bold">You can search for more projects on my <a href="https://github.com/Pedrohmac07" className=" underline hover:text-blue-700">Github</a></h3>
         </div>
       </div>
     </div>
