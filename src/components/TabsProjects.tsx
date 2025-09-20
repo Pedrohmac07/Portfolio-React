@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react";
 import projectCategories from "@/data/projects.json";
+import { motion } from "framer-motion";
 
 export default function ProjectsTabs() {
   const [activeTab, setActiveTab] = useState(0);
@@ -27,9 +28,11 @@ export default function ProjectsTabs() {
       {/* Projetos da categoria ativa */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         {activeCategory.projects.map((project: any) => (
-          <div
+          <motion.div
+            className="border p-4 rounded-lg shadow-md hover:shadow-lg bg-gray-950 hover:cursor-pointer hover:scale-105 duration-200"
             key={project.id}
-            className="border p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow bg-gray-950 hover:cursor-pointer"
+            whileHover={{ scale: 1.00 }}
+            whileTap={{ scale: 0.95 }}
           >
             <img
               src={project.image}
@@ -38,7 +41,7 @@ export default function ProjectsTabs() {
             />
             <h3 className="text-xl font-bold mb-2">{project.name}</h3>
             <p className="text-gray-700">{project.description}</p>
-          </div>
+          </motion.div>
         ))}
         <div className="w-screen">
           <h3 className=" text-center text-2xl font-bold">Você pode encontrar mais projetos no meu <a href="https://github.com/Pedrohmac07" className=" underline hover:text-blue-700">Github</a></h3>

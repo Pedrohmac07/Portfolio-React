@@ -1,6 +1,7 @@
 import HomeComponent from "@/components/HomeInfo";
 import "./page.css";
-import StarsBackground from "@/particles/BackgroundParticles";
+import Particles from "@/particles/particlesbackground";
+import Carousel from "@/components/carousel-motion";
 import MyProfilePicture from "@/pages/Images";
 import ScrollIndicator from "@/particles/ScrollIndicator";
 import MotionScroll from "@/components/Framer-Motion";
@@ -8,13 +9,29 @@ import TabsProjects from "@/components/TabsProjects";
 
 export default function Home() {
   return (
-    <main className="relative w-screen overflow-x-hidden">
-
-      {/* Fundo */}
-      <div className="absolute inset-0 z-0">
-        <StarsBackground />
-      </div>
-
+    <main className="relative w-screen overflow-hidden">
+      <div
+      style={{
+        width: "100vw",
+        height: "100vh", 
+        position: "fixed",
+        top: 0,
+        left: 0,
+        zIndex: 0,
+      }}
+    >
+      <Particles
+        particleColors={["#ffffff", "#ffffff"]}
+        particleCount={400}
+        particleSpread={25}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={true}
+        alphaParticles={false}
+        disableRotation={false}
+      />
+    </div>
+    
       {/* Primeira seção */}
       <MotionScroll>
         <div className="grid grid-cols-2 place-items-center gap-0 h-screen z-10 relative">
