@@ -33,7 +33,7 @@ const HomeComponent = () => (
         <input type="text" />
       </ReactTyped>
     </p>
-    <motion.div initial={{y: 200, Opacity: 0}}
+    <motion.div initial={{y: 200, opacity: 0}}
     animate={{y:0, opacity: 1}}
     transition={{duration: 1}}
     className="grid grid-cols-3 gap-4 w-1/2 mt-4 text-white text-3xl">      
