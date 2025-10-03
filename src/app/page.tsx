@@ -2,28 +2,26 @@ import HomeComponent from "@/components/HomeInfo";
 import "./page.css";
 import Particles from "@/particles/particlesbackground";
 import ScrollIndicator from "@/particles/ScrollIndicator";
-import MotionScroll from "@/components/Framer-Motion";
+import MotionScroll from "@/particles/Framer-Motion";
 import TabsProjects from "@/components/TabsProjects";
-import MyProfilePicture from "@/pages/Images";
+import MyProfilePicture from "@/particles/Images";
 import AboutMeComp from "@/components/AboutMeInfo";
 
 export default function Home() {
   return (
     <main className="relative w-screen overflow-hidden">
-      <div
-      className="w-screen h-screen fixed top-0 left-0 z-0"
-    >
-      <Particles
-        particleColors={["#ffffff", "#ffffff"]}
-        particleCount={400}
-        particleSpread={25}
-        speed={0.1}
-        particleBaseSize={100}
-        moveParticlesOnHover={true}
-        alphaParticles={false}
-        disableRotation={false}
-      />
-    </div>
+      <div className="w-screen h-screen fixed top-0 left-0 z-0">
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={400}
+          particleSpread={25}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
       <MotionScroll>
         <div className="grid grid-rows-1 md:grid-cols-2 place-items-center h-screen z-10 relative">
           <HomeComponent />
@@ -39,15 +37,15 @@ export default function Home() {
         </MotionScroll>
       </div>
 
-        <div className="flex justify-center items-center h-screen z-10 relative mb-64">
-          <MotionScroll>
-            <h1 className=" text-center">My Projects</h1>
-            <TabsProjects />
-          </MotionScroll>
-        </div>
+      <div className="flex justify-center items-center h-screen z-10 relative mb-64">
+        <MotionScroll>
+          <h1 className=" text-center">My Projects</h1>
+          <TabsProjects />
+        </MotionScroll>
+      </div>
 
       <nav className="absolute bottom-4/5 left-1/25 transform z-20">
-      <ScrollIndicator/>
+        <ScrollIndicator />
       </nav>
     </main>
   );

@@ -1,6 +1,6 @@
 'use client'
 
-import ProfileCard from '@/components/ProfileCard'
+import ProfileCard from '@/utils/ProfileCard'
 
 export default function MyProfilePicture() {
   return (

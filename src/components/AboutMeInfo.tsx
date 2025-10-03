@@ -1,7 +1,7 @@
 "use client";
 import './AboutMe.css';
-import TextPressure from './TextPressure';
-import LogoLoop from './LogoLoop';
+import TextPressure from '../utils/TextPressure';
+import LogoLoop from '../utils/LogoLoop';
 
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiPython, SiJavascript, SiDocker, SiGithub, SiGit, SiAdobe, SiNodedotjs, SiPostman, SiC} from 'react-icons/si';
 
