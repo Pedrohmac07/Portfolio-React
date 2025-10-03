@@ -11,7 +11,7 @@ library.add(fas, far, fab)
 
 import { ReactTyped } from "react-typed";
 import { motion } from "framer-motion";
-import './HomeInfo.css';
+import '../styles/HomeInfo.css';
 
 const HomeComponent = () => (
   <div className="w-75">

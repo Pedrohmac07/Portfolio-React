@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useCallback, useMemo } from 'react';
-import './ProfileCard.css';
+import '../styles/ProfileCard.css';
 
 interface ProfileCardProps {
   avatarUrl: string;

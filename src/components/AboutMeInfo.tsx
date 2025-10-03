@@ -1,5 +1,5 @@
 "use client";
-import './AboutMe.css';
+import '../styles/AboutMe.css';
 import TextPressure from '../utils/TextPressure';
 import LogoLoop from '../utils/LogoLoop';
 
