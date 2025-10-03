@@ -24,7 +24,7 @@ const techLogos = [
 const AboutMeComp = () => {
   return (
     <section className="w-4/5 max-w-5xl text-white mx-auto text-center flexbox">
-      <div style={{ position: 'relative', margin: 'auto' }}>
+      <div className='relative mx-auto'>
         <TextPressure
           text="About Me"
           flex={true}
@@ -40,12 +40,12 @@ const AboutMeComp = () => {
       </div>
       <p className="text-lg mt-12 indent-4 text-justify relative">
         Hello, <strong>Im Pedro Machado</strong>, currently studying <strong>Computer Engineering</strong>, 
-        and i have a passion with programming and <strong>design</strong>. I love to create beautiful and 
+        and i have a passion with <strong>programming</strong> and <strong>design</strong>. I love to create beautiful and 
         functional web applications, and I am always looking for new challenges and opportunities to learn 
         and grow as a developer. I have some projects and knowledge in front-end and back-end development, 
         and I am excited to share my work with you!
       </p>
-      <div style={{position: 'relative', overflow: 'hidden', marginTop: '3rem'}}>
+      <div className="relative overflow-hidden mt-12">
         <LogoLoop
           logos={techLogos}
           speed={120}

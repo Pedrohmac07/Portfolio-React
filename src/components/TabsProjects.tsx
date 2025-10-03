@@ -16,7 +16,7 @@ export default function ProjectsTabs() {
             onClick={() => setActiveTab(index)}
             className={`px-4 py-2 font-medium transition-colors hover:cursor-pointer ${
               activeTab === index
-                ? "bg-blue-600 text-white"
+                ? "bg-[#8888ffff] text-white"
                 : "bg-white text-gray-800"
             }`}
           >
@@ -25,7 +25,6 @@ export default function ProjectsTabs() {
         ))}
       </div>
 
-      {/* Projetos da categoria ativa */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         {activeCategory.projects.map((project: any) => (
           <motion.a

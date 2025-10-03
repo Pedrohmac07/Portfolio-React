@@ -11,14 +11,7 @@ export default function Home() {
   return (
     <main className="relative w-screen overflow-hidden">
       <div
-      style={{
-        width: "100vw",
-        height: "100vh", 
-        position: "fixed",
-        top: 0,
-        left: 0,
-        zIndex: 0,
-      }}
+      className="w-screen h-screen fixed top-0 left-0 z-0"
     >
       <Particles
         particleColors={["#ffffff", "#ffffff"]}
@@ -46,17 +39,13 @@ export default function Home() {
         </MotionScroll>
       </div>
 
-      {/* Segunda seção */}
-        <div className="flex justify-center items-center h-screen z-10 relative">
+        <div className="flex justify-center items-center h-screen z-10 relative mb-64">
           <MotionScroll>
             <h1 className=" text-center">My Projects</h1>
             <TabsProjects />
           </MotionScroll>
         </div>
 
-      
-
-      {/* ScrollIndicator */}
       <nav className="absolute bottom-4/5 left-1/25 transform z-20">
       <ScrollIndicator/>
       </nav>

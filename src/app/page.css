@@ -13,3 +13,7 @@ h1 {
 .fabicon {
   font-size: 2rem;
 }
+
+button {
+  border-radius: 10px;
+}
