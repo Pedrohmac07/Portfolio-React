@@ -31,12 +31,12 @@ export default function Home() {
         disableRotation={false}
       />
     </div>
-    
-      {/* Primeira seção */}
       <MotionScroll>
-        <div className="grid grid-cols-2 place-items-center h-screen z-10 relative">
+        <div className="grid grid-rows-1 md:grid-cols-2 place-items-center h-screen z-10 relative">
           <HomeComponent />
-          <MyProfilePicture />
+          <div className="mt-20 md:mt-0">
+            <MyProfilePicture />
+          </div>
         </div>
       </MotionScroll>
 

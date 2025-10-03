@@ -13,6 +13,7 @@ export default function MotionScroll({ children }: Props) {
       exit={{ opacity: 0, y: 20 }}          
       viewport={{ once: false, amount: 0.1 }} 
       transition={{ duration: 0.7, ease: "easeInOut" }}
+      className="w-full h-full margin-auto"
     >
       {children}
     </motion.div>

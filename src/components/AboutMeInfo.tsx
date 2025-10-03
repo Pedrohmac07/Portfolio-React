@@ -23,9 +23,8 @@ const techLogos = [
 
 const AboutMeComp = () => {
   return (
-    <div className="w-4/5 max-w-5xl text-white mx-auto text-center flexbox">
-      {/* Título animado */}
-      <div style={{ position: 'relative', height: '200px', margin: '0 auto' }}>
+    <section className="w-4/5 max-w-5xl text-white mx-auto text-center flexbox">
+      <div style={{ position: 'relative', margin: 'auto' }}>
         <TextPressure
           text="About Me"
           flex={true}
@@ -39,16 +38,14 @@ const AboutMeComp = () => {
           minFontSize={36}
         />
       </div>
-      {/* Parágrafo */}
-      <p className="text-lg mt-4 indent-4 text-justify">
+      <p className="text-lg mt-12 indent-4 text-justify relative">
         Hello, <strong>Im Pedro Machado</strong>, currently studying <strong>Computer Engineering</strong>, 
         and i have a passion with programming and <strong>design</strong>. I love to create beautiful and 
         functional web applications, and I am always looking for new challenges and opportunities to learn 
         and grow as a developer. I have some projects and knowledge in front-end and back-end development, 
         and I am excited to share my work with you!
       </p>
-      {/* LogoLoop abaixo do parágrafo */}
-      <div style={{ height: '200px', position: 'relative', overflow: 'hidden', marginTop: '2rem'}}>
+      <div style={{position: 'relative', overflow: 'hidden', marginTop: '3rem'}}>
         <LogoLoop
           logos={techLogos}
           speed={120}
@@ -62,7 +59,7 @@ const AboutMeComp = () => {
           ariaLabel="Technology partners"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
