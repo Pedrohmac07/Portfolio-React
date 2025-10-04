@@ -37,14 +37,15 @@ export default function Home() {
         </MotionScroll>
       </div>
 
-      <div className="flex justify-center items-center h-screen z-10 relative mb-64">
+      <div className="flex justify-center items-center z-10 relative mb-10">
         <MotionScroll>
           <h1 className=" text-center">My Projects</h1>
           <TabsProjects />
         </MotionScroll>
       </div>
+      <div className="relative "><h3 className=" text-center text-2xl font-bold mb-10 z-10">You can search for more projects on my <a href="https://github.com/Pedrohmac07" className=" underline hover:text-blue-700">Github</a></h3></div>
 
-      <nav className="absolute bottom-4/5 left-1/25 transform z-20">
+      <nav className="absolute bottom-4/5 left-1/25 transform">
         <ScrollIndicator />
       </nav>
     </main>

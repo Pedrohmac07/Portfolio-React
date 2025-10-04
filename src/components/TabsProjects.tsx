@@ -44,9 +44,6 @@ export default function ProjectsTabs() {
             <p className="text-gray-700">{project.description}</p>
           </motion.a>
         ))}
-        <div className="w-screen">
-          <h3 className=" text-center text-2xl font-bold">You can search for more projects on my <a href="https://github.com/Pedrohmac07" className=" underline hover:text-blue-700">Github</a></h3>
-        </div>
       </div>
     </div>
   );

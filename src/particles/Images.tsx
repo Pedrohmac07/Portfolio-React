@@ -6,15 +6,12 @@ export default function MyProfilePicture() {
   return (
     <ProfileCard
     name="Pedro Machado"
-    title="Computer Engineer"
+    title="Computer Engineering Student"
     handle="Pedro"
-    status=""
-    contactText="Contact Me"
     avatarUrl="/EuTransparente.png"
     showUserInfo={false}
     enableTilt={true}
     enableMobileTilt={false}
-    onContactClick={() => console.log('Contact clicked')}
   />
   )
 }

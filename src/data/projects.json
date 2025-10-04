@@ -16,6 +16,27 @@
         "description": "Web game made with JS.",
         "image": "/Minesweeper.png",
         "link": "https://pedrohmac07.github.io/MineSweeper/"
+      },
+      {
+        "id": 3,
+        "name": "Portfolio",
+        "description": "My portfolio made with NextJS and TailwindCSS.",
+        "image": "/portfolio.png",
+        "link": "https://pedrohmac07.github.io/Portfolio-React/"
+      },
+      {
+        "id": 4,
+        "name": "Pokedex",
+        "description": "Web pokedex that consumes the pokeapi.",
+        "image": "/pokedex.png",
+        "link": "https://github.com/Pedrohmac07/PokedexAPI"
+      },
+      {
+        "id": 5,
+        "name": "Virtual Piano",
+        "description": "Virtual Piano made with ReactJS.",
+        "image": "/piano.jpg",
+        "link": "https://pedrohmac07.github.io/Virtual-Piano/"
       }
     ]
   },
@@ -24,18 +45,25 @@
     "category": "Back-End",
     "projects": [
       {
-        "id": 3,
+        "id": 6,
         "name": "QR-Code Generator",
         "description": "QR code and password generator in terminal. NodeJS.",
         "image": "/qr-code.png",
         "link": "https://github.com/Pedrohmac07/QrCode-Generator"
       },
       {
-        "id": 4,
+        "id": 7,
         "name": "Formula 1 API",
         "description": "Formula 1 API. NODEJS",
         "image": "/formula-1.gif",
         "link": "https://github.com/Pedrohmac07/Formula1-nodeJS-API"
+      },
+      {
+        "id": 8,
+        "name": "Whatsapp Bot",
+        "description": "Whatsapp bot that sends messages automatically. Made with python.",
+        "image": "/whatsapp.webp",
+        "link": "https://github.com/Pedrohmac07/WhatsappBotV1"
       }
     ]
   }
