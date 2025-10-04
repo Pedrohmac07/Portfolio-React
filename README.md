@@ -24,38 +24,7 @@ This is the repository for my personal portfolio website, designed to showcase m
 - **Icons:** FontAwesome, React Icons, Lucide React
 - **Analytics:** Vercel Speed Insights
 
-## 🚀 Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-Make sure you have Node.js and npm installed on your machine.
-
-### Installation & Setup
-
-1.  **Clone the repository:**
-    ```sh
-    git clone https://github.com/Pedrohmac07/Portfolio-React.git
-    ```
-2.  **Navigate to the project directory:**
-    ```sh
-    cd portfolio-react
-    ```
-3.  **Install NPM packages:**
-    ```sh
-    npm install
-    ```
-
-### Running the Application
-
-To start the development server:
-
-```sh
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Click [Here][https://portfolio-react-lovat-nine.vercel.app/] to see my portfolio 🚀
 
 ## 📂 Project Structure
 
