@@ -24,7 +24,7 @@ This is the repository for my personal portfolio website, designed to showcase m
 - **Icons:** FontAwesome, React Icons, Lucide React
 - **Analytics:** Vercel Speed Insights
 
-# [Click here to see my portfolio 🚀]((https://portfolio-react-lovat-nine.vercel.app/))
+# [Click here to see my portfolio 🚀](https://portfolio-react-lovat-nine.vercel.app/)
 
 ## 📂 Project Structure
 
