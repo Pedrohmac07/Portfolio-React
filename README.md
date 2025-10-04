@@ -1,3 +1,74 @@
-## Welcome to my portfolio
+# Pedro Machado's Portfolio
+[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Pedrohmac07/Portfolio-React)
 
-This project was made with NextJS and React.
+This is the repository for my personal portfolio website, designed to showcase my skills and projects. It is a modern, single-page application built with Next.js, React, and TypeScript, featuring a host of interactive animations and visual effects.
+
+## ✨ Features
+
+- **Interactive Particle Background:** A dynamic WebGL particle background created with `ogl` that reacts to mouse movement.
+- **Scroll-Triggered Animations:** Content sections elegantly fade and slide into view on scroll, powered by `Framer Motion`.
+- **Dynamic "About Me" Section:** Features an interactive text effect (`TextPressure`) that responds to cursor proximity and a scrolling logo wall (`LogoLoop`) of technologies I've worked with.
+- **Tabbed Project Showcase:** My projects are neatly organized into "Front-End" and "Back-End" categories, with data dynamically loaded from a local JSON file.
+- **3D Profile Card:** A visually striking profile card with a tilt effect that responds to mouse movement, creating a 3D illusion.
+- **Typed Introduction:** An engaging headline with an auto-typing animation using `react-typed`.
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS, PostCSS
+- **Animation & Visuals:**
+    - Framer Motion (for layout and scroll animations)
+    - OGL & tsparticles (for WebGL particle effects)
+    - React Typed (for typing animations)
+- **Icons:** FontAwesome, React Icons, Lucide React
+- **Analytics:** Vercel Speed Insights
+
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/Pedrohmac07/Portfolio-React.git
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd portfolio-react
+    ```
+3.  **Install NPM packages:**
+    ```sh
+    npm install
+    ```
+
+### Running the Application
+
+To start the development server:
+
+```sh
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📂 Project Structure
+
+-   `src/app/page.tsx`: The main page component that assembles all sections of the portfolio.
+-   `src/components/`: Core UI components for the Home, About, and Projects sections.
+    -   `HomeInfo.tsx`: The initial landing view with the typed introduction and social links.
+    -   `AboutMeInfo.tsx`: The section detailing my skills and passion, including the technology logo loop.
+    -   `TabsProjects.tsx`: The component that displays projects in a switchable tab view.
+-   `src/particles/`: Components responsible for the portfolio's background visuals and animations.
+    -   `particlesbackground.tsx`: The WebGL-based interactive particle background.
+    -   `Framer-Motion.tsx`: A wrapper component for scroll-based animations.
+-   `src/utils/`: Reusable, specialized components that add unique interactivity.
+    -   `ProfileCard.tsx`: The interactive 3D-tilting profile card.
+    -   `LogoLoop.tsx`: The horizontally scrolling logo display.
+    -   `TextPressure.tsx`: The interactive text that changes based on cursor position.
+-   `src/data/projects.json`: A static data file containing information about my personal projects.
